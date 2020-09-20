@@ -29,7 +29,7 @@ const App = () => {
 
 
   useEffect(() => {
-    axios.get('https://randomuser.me/api?results=20')
+    axios.get('https://randomuser.me/api?results=50')
     .then(({data}) => {
       console.log(data.results)
 
