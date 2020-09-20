@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import 'react-table-v6/react-table.css'
 import axios from 'axios'
 import ReactTable from 'react-table-v6'
+import 'react-table-v6/react-table.css'
+
+
 
 
 const App = () => {
@@ -10,12 +12,12 @@ const App = () => {
     employees: [],
     columns: [
       {
-        Header: 'Name',
+        Header: 'Employee First Name, Last Name',
         accessor: 'name'
       },
       {
-        Header: 'Phone',
-        accessor: 'phone'
+        Header: 'Gender',
+        accessor: 'gender'
       },
       {
         Header: 'Email',
@@ -34,7 +36,7 @@ const App = () => {
       let employees = data.results.map(employee => ({
         name: employee.name.first + ' ' + employee.name.last,
         email: employee.email,
-        phone: employee.phone
+        gender: employee.gender
       }))
 
       setEmployeeState({ ...employeeState, employees})
