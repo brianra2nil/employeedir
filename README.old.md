@@ -11,5 +11,6 @@ Deployed URL:
  Github Repository:
  https://github.com/brianra2nil/employeedir
 
-
+Screenshot:
+![employeedirscreenshot](https://user-images.githubusercontent.com/65981639/93694387-f6879680-fabf-11ea-88c7-f7e4fd75c25e.png)
 
